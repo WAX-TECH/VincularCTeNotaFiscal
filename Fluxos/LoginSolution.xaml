@@ -1,0 +1,193 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="LoginSolution" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ss="clr-namespace:System.Security;assembly=System.Private.CoreLib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="strURLERP" Type="InArgument(x:String)" />
+    <x:Property Name="strUsernameERP" Type="InArgument(x:String)" />
+    <x:Property Name="strPasswordERP" Type="InArgument(ss:SecureString)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>1793,1222</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>LoginSolution_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.Activities.System.Text</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Mail.Enums</x:String>
+      <x:String>UiPath.Shared.Activities.Utils</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Mail</x:String>
+      <x:String>UiPath.Shared.Activities.ConnectionService.Contracts</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.MicrosoftOffice365.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="LoginSolution" sap:VirtualizedContainerService.HintSize="608,1157" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: ERP Solution" sap:VirtualizedContainerService.HintSize="546,1069" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" IsIncognito="True" OpenMode="Always" ScopeGuid="4a411dc9-e35e-4b6e-87f9-b9d6c6a56712" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="512,829" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Usuário'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="450,250" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="4a411dc9-e35e-4b6e-87f9-b9d6c6a56712" Text="[strUsernameERP]" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="http://10.11.116.7:8080/ERPSolutionWeb_Teste/servlet/erpsolution.ambiente.secloginerpsolution?00000000-0000-0000-0000-000000000000" CvElementArea="1221, 533, 453, 52" CvType="InputBox" DesignTimeRectangle="1223, 534, 450, 50" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='LoginInput form-control' placeholder='Informe seu usuário' aaname='Usuário' /&gt;" Guid="b0cae4f9-4445-4342-aede-828750831442" InformativeScreenshot="79cb5a0bddca726063e97e44a1f5f66d.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ERP Solution' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvTextArea="1222, 508, 58, 15" CvTextArgument="Usuario" CvType="Text" DesignTimeRectangle="1223, 509, 450, 15" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='gx-label col-xs-12 LoginInputLabel control-label Active' aaname='Usuário' check:innerText='Usuário' /&gt;" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <Sequence DisplayName="GARANTE QUE O CAMPO SENHA ESTÁ SELECIONADO" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="Sequence_4">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Senha'" sap:VirtualizedContainerService.HintSize="388,189" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="4a411dc9-e35e-4b6e-87f9-b9d6c6a56712" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="http://10.11.116.7:8080/servlet/erpsolution.ambiente.secloginerpsolution" CvTextArea="1234, 610, 123, 14" CvTextArgument="Informe Sua senha" CvType="Text" DesignTimeRectangle="1223, 594, 450, 50" DesignTimeScaleFactor="1" ElementType="InputBoxPassword" FullSelectorArgument="&lt;webctrl id='vSENHA' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='vSENHA' tag='INPUT' type='password' class='LoginInput form-control' placeholder='Informe sua senha' aaname='Senha' /&gt;" Guid="8672d1ea-7799-402a-9c06-adecd34e9ed6" InformativeScreenshot="f2e3b4af977b177acf4ef08ca4067830.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ERP Solution' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CvTextArea="1221, 568, 48, 15" CvTextArgument="Senha" CvType="Text" DesignTimeRectangle="1223, 569, 450, 15" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Senha' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Senha' tag='LABEL' type='' class='gx-label col-xs-12 LoginInputLabel control-label' check:innerText='Senha' /&gt;" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Senha'" sap:VirtualizedContainerService.HintSize="388,182" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="4a411dc9-e35e-4b6e-87f9-b9d6c6a56712" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="http://10.11.116.7:8080/servlet/erpsolution.ambiente.secloginerpsolution" CvTextArea="1234, 610, 123, 14" CvTextArgument="Informe Sua senha" CvType="Text" DesignTimeRectangle="1223, 594, 450, 50" DesignTimeScaleFactor="1" ElementType="InputBoxPassword" FullSelectorArgument="&lt;webctrl id='vSENHA' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='vSENHA' tag='INPUT' type='password' class='LoginInput form-control' placeholder='Informe sua senha' aaname='Senha' /&gt;" Guid="8672d1ea-7799-402a-9c06-adecd34e9ed6" InformativeScreenshot="f2e3b4af977b177acf4ef08ca4067830.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ERP Solution' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CvTextArea="1221, 568, 48, 15" CvTextArgument="Senha" CvType="Text" DesignTimeRectangle="1223, 569, 450, 15" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Senha' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Senha' tag='LABEL' type='' class='gx-label col-xs-12 LoginInputLabel control-label' check:innerText='Senha' /&gt;" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+              </uix:NClick>
+            </Sequence>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Double" DisplayName="Type Into 'Senha'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="450,250" sap2010:WorkflowViewState.IdRef="NTypeInto_2" IsPassword="True" ScopeIdentifier="4a411dc9-e35e-4b6e-87f9-b9d6c6a56712" SecureText="[strPasswordERP]" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="http://10.11.116.7:8080/ERPSolutionWeb_Teste/servlet/erpsolution.ambiente.secloginerpsolution?00000000-0000-0000-0000-000000000000" CvTextArea="1234, 654, 124, 14" CvTextArgument="Informe sua senha" CvType="Text" DesignTimeRectangle="1223, 638, 450, 50" DesignTimeScaleFactor="1" ElementType="InputBoxPassword" FullSelectorArgument="&lt;webctrl id='vSENHA' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='vSENHA' tag='INPUT' type='password' class='LoginInput form-control' placeholder='Informe sua senha' aaname='Senha' /&gt;" Guid="b7db14a4-fb96-46c2-afc4-bc28e614d463" InformativeScreenshot="62b46952fb2b42276f2ef592d32fbfd2.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ERP Solution' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvTextArea="1221, 611, 49, 16" CvTextArgument="Senha" CvType="Text" DesignTimeRectangle="1223, 613, 450, 15" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Senha' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Senha' tag='LABEL' type='' class='gx-label col-xs-12 LoginInputLabel control-label' check:innerText='Senha' /&gt;" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Entrar'" sap:VirtualizedContainerService.HintSize="450,182" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="4a411dc9-e35e-4b6e-87f9-b9d6c6a56712" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="http://10.11.116.7:8080/ERPSolutionWeb_Teste/servlet/erpsolution.ambiente.secloginerpsolution?00000000-0000-0000-0000-000000000000" CvElementArea="1221, 745, 454, 49" CvTextArea="1425, 758, 47, 17" CvTextArgument="Entrar" CvType="Button" DesignTimeRectangle="1223, 747, 450, 45" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl id='ENTER' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ENTER' tag='INPUT' type='button' class='LoginEntrar btn btn-default' aaname='Entrar' check:text='Entrar' /&gt;" Guid="1e13affc-4a31-4085-86fe-ad982d463ed1" InformativeScreenshot="3a5aeca420100b82eb52b56cb5d99295.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ERP Solution' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1936, 1048" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAAC0AAAAtCAYAAAA6GuKaAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAALdQAAC3UARhhxWkAAAAcdEVYdFNvZnR3YXJlAEFkb2JlIEZpcmV3b3JrcyBDUzbovLKMAAAEoUlEQVRoQ73ZXVMbZRQH8H4CXz6A3khbO7XDS94gCdlNyMZQwL7QWlugVRlxYqmoFbSO49gP4Th6oV/BOl76ERy9kIB2HKSFZEMJoUCRlpA9/h8Mumb+STYb4OI3h/3vec55LphOSo6IyL5avd363OrnrXcgv1tvtz7P+ppBQ7dWP2sLwa+wA1Ku6jnM+t2ioRurn3bo8BiEeAI6O+cGDRtVuOWLFD7xbhVueaWq3fe+CDvfKBo2ovCRP1T42L+JKg6ovhCb0wgaOlWY7OyCTZAGqP4uNs8pGjqxcjMYgA0QFx5BgM11gob1rLwf9sM6SBM2wM/m10PDWlYmNM/KRGQNZB9gjuZle2qhYTUr41rHyg3tIQh+3h9q3rjmYfuqoSGTv6615a/rqyAHAHO1draXoWGlfCr6IhRADtAqnGD7K9HQLp+KPZUfi/0Ekh/rOUBqPvakYk+ze9jR0G75zZ4vQA7Rl+wedjS0W74aXwQ5RFl2Dzsa2j0Yin8P4tTysAEJCxV2K+2r4Qd2Dzsa2j24ZBxbumQsoEo9y5cTljkYLd47HSz+mezcUVU9q5z1E4twnN3DjoaVli7E+5cG41IdFl5MWAt9ke27mqf0e8QjqFKuJeRF9V718fNlF+IDbH8lGjK5M8YICLN0NmHdT0a2fwt7cWEfLvt/Ksf74tK5hMXOl42wvQwNq8n2x69m++KCWoZlAwlr3tCKMyFfaRYfJapR7+eNSFH1/3ce+gxVr7F91dCwlmyv8UY2iUVg9uLCPbhw0F+aDQWkHtWn+tW5vRlqHttTCw3rWTSM0UzC2JqL6jvpzkBppqtTnFL96pw6n8EcNr8eGjoxH419k8Znebdw/ls21wka1rMYS45kepKbc5HYTtrfVZoJBMUp1a/OqfOY09Dv8h4a1rIY7RsGUTKxfmsuHC9O+4KlNP7rl/aHawiJ6lP96tzeDHD8r8YeGlaT0V+5kokOCOq/srEz1lzo5e1pT7g0441INdOe7hL6iqrffr48b4jtq4aGTEY/91pGP4sFlc5JNnremgv2bk+3R0rpDk1mOnT4p6pnlav3qk/1V5lzme1laFgpow0mQWrJ6hetua6+7ek2vTTdpkm6TRdV1TPyonrPzlXoZfsr0dDO1F59Ae6B1JPTL1kL4fM7f/hO79z1JIuqqmeVs37iPrSwe9jR0M6MXP4OxKlc5IosaUMWqlWutK+GO+wedjS0y3UPZ0AaN0IyJ0aa/zyd6379K8CwQ/M1u4cdDe1yodFncuHRn0EOwS/Y9yy7hx0NK+VCYydzobceghygNex5ie2vREMm1/W2F9ZADsA6+NhehobVmJ0pvxlIrYPg5+apOYHUBn5u6I+RNKzF9KcCpv+dDZB98AjzOtmeWmhYj+kbD5re8U2QJqjzrv7ATkMnzPYbIfgLxAV1zvWXRzR0ymx9txu2QBqg+pv67oWGjTBPTWjmqfcegziAvommv+WiYaPMkx/E4AlIDep9DzvfKBq6YZ64aUARhFC5wc65QUO3zOMf6ubxyVnz2GQJZLeqZ+Ss3y0aNsNsmWoxj079CFu7tWXqKOtzT478DbA1nSwd0YFrAAAAAElFTkSuQmCC" InformativeScreenshot="d82010e5a9cdf38e7502aa5775659a2e.jpg" Selector="&lt;html app='chrome.exe' title='ERP Solution' /&gt;" Title="ERP Solution" Url="[strURLERP]" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

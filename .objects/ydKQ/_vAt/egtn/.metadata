@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Chrome ERP Solution",
+  "Type": "Screen",
+  "Id": "egtnxOqIx0mfrJf-Z0vvJQ",
+  "Reference": "ybwzfI7n4U6Yqw9BXwP4-w/egtnxOqIx0mfrJf-Z0vvJQ",
+  "ParentRef": "ybwzfI7n4U6Yqw9BXwP4-w/_vAt11G9kkKTWpWW913R6w",
+  "Created": "2024-09-17T14:03:53.7010149Z",
+  "Updated": "2024-09-17T14:03:53.7010149Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.4.2.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

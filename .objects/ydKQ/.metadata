@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Chrome ERP Solution",
+  "Type": "App",
+  "Id": "ydKQg1C03EGmEbKzy0dAvg",
+  "Reference": "ybwzfI7n4U6Yqw9BXwP4-w/ydKQg1C03EGmEbKzy0dAvg",
+  "Created": "2024-09-17T14:03:53.678828Z",
+  "Updated": "2024-09-17T14:03:53.678828Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.4.2.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

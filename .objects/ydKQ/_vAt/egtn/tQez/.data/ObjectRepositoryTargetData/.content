@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="GDdjDya7EESwLgjikxt_KQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="http://10.11.116.7:8080/ERPSolutionWeb_Teste/servlet/erpsolution.compras.estctedestinatarioconsultar" CVScreenId="2f343a7e-e148-4a1e-b25c-23508f2b4c38" CvElementArea="584, 406, 244, 40" CvType="InputBox" DesignTimeRectangle="536, 275, 259, 30" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl name='vEST193NUMERO' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl name='vEST193NUMERO' tag='INPUT' type='text' class='AttNumeric form-control' aaname='Número CT-e' /&gt;" Guid="bfaf8d4c-753a-4751-b7c4-f39c29642701" ImageBase64="" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Consulta XML CT-e Lançados\Baixados - 2425' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="2f343a7e-e148-4a1e-b25c-23508f2b4c38" CvTextArea="586, 391, 86, 15" CvTextArgument="Numero CT-e" CvType="Text" DesignTimeRectangle="536, 260, 259, 15" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Número CT-e' parentid='TABLEFILTROS' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Número CT-e' parentid='TABLEFILTROS' tag='LABEL' type='' class='gx-label  AttNumericLabel control-label' check:innerText='Número CT-e' /&gt;" Guid="6479b176-e972-42ea-89d1-ef6915331c6c" ImageBase64="" SearchSteps="Selector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="5ed6c504ab6be2764bc6f6dbed2c9942.png" xmlns="">0o7CGOYM8gkClXbosDXx3qw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

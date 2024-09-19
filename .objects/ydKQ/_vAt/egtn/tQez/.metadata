@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Type Into 'Número CT-e'",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "tQezqnKhy0Smycz5y1OG3A",
+  "Reference": "ybwzfI7n4U6Yqw9BXwP4-w/tQezqnKhy0Smycz5y1OG3A",
+  "ParentRef": "ybwzfI7n4U6Yqw9BXwP4-w/egtnxOqIx0mfrJf-Z0vvJQ",
+  "Created": "2024-09-17T14:03:53.9929977Z",
+  "Updated": "2024-09-17T14:03:53.9929977Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.4.2.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
