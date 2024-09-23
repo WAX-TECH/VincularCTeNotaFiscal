@@ -1,4 +1,12 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="FilialSolution" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1128.8,1045.6" sap2010:WorkflowViewState.IdRef="FilialSolution_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="FilialSolution" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_Filial" Type="InArgument(x:String)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>1793,1232</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>FilialSolution_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -38,6 +46,8 @@
       <x:String>UiPath.Platform.SyncObjects</x:String>
       <x:String>UiPath.Shared.Activities.Business</x:String>
       <x:String>System.ComponentModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -83,32 +93,46 @@
       <AssemblyReference>WindowsBase</AssemblyReference>
       <AssemblyReference>System.ComponentModel</AssemblyReference>
       <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="FilialSolution" sap:VirtualizedContainerService.HintSize="512,980.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="FilialSolution" sap:VirtualizedContainerService.HintSize="512,1167" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: ERP Solution" sap:VirtualizedContainerService.HintSize="449.6,892" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" IsIncognito="True" ScopeGuid="53042334-00c5-4636-acb7-2dc35c54d80e" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: ERP Solution" sap:VirtualizedContainerService.HintSize="450,1079" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" IsIncognito="True" ScopeGuid="53042334-00c5-4636-acb7-2dc35c54d80e" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="416,652" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="416,839" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'BTG CHS'" sap:VirtualizedContainerService.HintSize="353.6,189.6" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="53042334-00c5-4636-acb7-2dc35c54d80e" Version="V3">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'BTG CHS'" sap:VirtualizedContainerService.HintSize="354,189" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="53042334-00c5-4636-acb7-2dc35c54d80e" Version="V3">
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="http://10.11.116.7:8080/ERPSolutionWeb_Teste/servlet/erpsolution.compras.estctedestinatarioconsultar" CVScreenId="19ec7006-5bf5-4550-91d8-eae7afbe5406" CvTextArea="87, 267, 66, 13" CvTextArgument="BTG CHS" CvType="Text" DesignTimeRectangle="88, 264, 64, 19" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl id='TABLEIDENTIFICADORES_MPAGE' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl id='TABLEIDENTIFICADORES_MPAGE' tag='TABLE' /&gt;&lt;webctrl type='' tag='A' class='' aaname='BTG | CHS' check:innerText='BTG | CHS' /&gt;" Guid="9e71000a-ca1a-4485-88eb-8b818ba1d3d8" InformativeScreenshot="5e5a9d9f9ee099a8c072f0e6e39fd276.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Consulta XML CT-e Lançados\Baixados - 2425' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
               </uix:NClick.Target>
             </uix:NClick>
-            <uix:NSelectItem DisplayName="Select Item 'Codigo da empresa'" sap:VirtualizedContainerService.HintSize="353.6,189.6" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="1 BTG PRODUTOS E SERVIÇOS LTDA" ScopeIdentifier="53042334-00c5-4636-acb7-2dc35c54d80e" Version="V3">
+            <uix:NSelectItem DisplayName="Select Item 'Codigo da empresa'" sap:VirtualizedContainerService.HintSize="354,189" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="1 BTG PRODUTOS E SERVIÇOS LTDA" ScopeIdentifier="53042334-00c5-4636-acb7-2dc35c54d80e" Version="V3">
               <uix:NSelectItem.Items>
                 <scg:List x:TypeArguments="x:String" Capacity="2">
                   <x:String>Selecione uma empresa...</x:String>
@@ -125,7 +149,7 @@
                 </uix:TargetAnchorable>
               </uix:NSelectItem.Target>
             </uix:NSelectItem>
-            <uix:NSelectItem DisplayName="Select Item 'Codigo da empresa'" sap:VirtualizedContainerService.HintSize="354,182" sap2010:WorkflowViewState.IdRef="NSelectItem_2" Item="1 CHS" ScopeIdentifier="53042334-00c5-4636-acb7-2dc35c54d80e" Version="V3">
+            <uix:NSelectItem DisplayName="Select Item 'Codigo da empresa'" sap:VirtualizedContainerService.HintSize="354,189" sap2010:WorkflowViewState.IdRef="NSelectItem_2" Item="[in_Filial]" ScopeIdentifier="53042334-00c5-4636-acb7-2dc35c54d80e" Version="V3">
               <uix:NSelectItem.Items>
                 <scg:List x:TypeArguments="x:String" Capacity="7">
                   <x:String>Selecione uma filial...</x:String>
@@ -147,6 +171,11 @@
                 </uix:TargetAnchorable>
               </uix:NSelectItem.Target>
             </uix:NSelectItem>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Confirmar'" sap:VirtualizedContainerService.HintSize="354,182" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="53042334-00c5-4636-acb7-2dc35c54d80e" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="http://10.11.116.7:8080/ERPSolutionWeb_Teste/servlet/erpsolution.ambiente.wptrocaempresafilialperfil?gxPopupLevel%3D0%3B" CVScreenId="ca7ddcce-d551-4a94-aed3-5a873162ae87" CvElementArea="527, 630, 113, 40" CvTextArea="549, 643, 69, 11" CvTextArgument="CONFIRMAR" CvType="Button" DesignTimeRectangle="529, 632, 110, 36" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl id='gxp0_ifrm' tag='IFRAME' /&gt;&lt;webctrl id='BTNENTER' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='gxp0_ifrm' tag='IFRAME' /&gt;&lt;webctrl id='BTNENTER' tag='INPUT' type='button' class='BtnDefault btn btn-default' aaname='Confirmar' check:text='Confirmar' /&gt;" Guid="87bc1766-2d23-452e-b3fb-8571b024785c" InformativeScreenshot="f990bd7fb4c5be18f3be2857a67bb2c1.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ERP Solution - Dashboard' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
           </Sequence>
         </ActivityAction>
       </uix:NApplicationCard.Body>

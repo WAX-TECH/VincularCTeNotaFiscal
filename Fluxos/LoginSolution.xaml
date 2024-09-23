@@ -113,7 +113,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: ERP Solution" sap:VirtualizedContainerService.HintSize="546,1069" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" IsIncognito="True" OpenMode="Always" ScopeGuid="4a411dc9-e35e-4b6e-87f9-b9d6c6a56712" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: ERP Solution" sap:VirtualizedContainerService.HintSize="546,1069" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" IsIncognito="True" OpenMode="Always" ScopeGuid="4a411dc9-e35e-4b6e-87f9-b9d6c6a56712" Version="V2" WindowResize="Maximize">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
@@ -130,7 +130,7 @@
                 <uix:TargetAnchorable BrowserURL="http://10.11.116.7:8080/ERPSolutionWeb_Teste/servlet/erpsolution.ambiente.secloginerpsolution?00000000-0000-0000-0000-000000000000" CvElementArea="1221, 533, 453, 52" CvType="InputBox" DesignTimeRectangle="1223, 534, 450, 50" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='LoginInput form-control' placeholder='Informe seu usuário' aaname='Usuário' /&gt;" Guid="b0cae4f9-4445-4342-aede-828750831442" InformativeScreenshot="79cb5a0bddca726063e97e44a1f5f66d.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ERP Solution' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
                     <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                      <uix:Target CvTextArea="1222, 508, 58, 15" CvTextArgument="Usuario" CvType="Text" DesignTimeRectangle="1223, 509, 450, 15" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='gx-label col-xs-12 LoginInputLabel control-label Active' aaname='Usuário' check:innerText='Usuário' /&gt;" SearchSteps="FuzzySelector, CV" />
+                      <uix:Target CvTextArea="1222, 508, 58, 15" CvTextArgument="Usuario" CvType="Text" DesignTimeRectangle="1223, 509, 450, 15" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='gx-label col-xs-12 LoginInputLabel control-label Active' aaname='Usuário' check:innerText='Usuário' /&gt;" Guid="9756668b-7b0c-4ee2-b2d4-984a959c29d9" SearchSteps="FuzzySelector, CV" />
                     </scg:List>
                   </uix:TargetAnchorable.Anchors>
                 </uix:TargetAnchorable>
@@ -148,7 +148,7 @@
                   <uix:TargetAnchorable BrowserURL="http://10.11.116.7:8080/servlet/erpsolution.ambiente.secloginerpsolution" CvTextArea="1234, 610, 123, 14" CvTextArgument="Informe Sua senha" CvType="Text" DesignTimeRectangle="1223, 594, 450, 50" DesignTimeScaleFactor="1" ElementType="InputBoxPassword" FullSelectorArgument="&lt;webctrl id='vSENHA' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='vSENHA' tag='INPUT' type='password' class='LoginInput form-control' placeholder='Informe sua senha' aaname='Senha' /&gt;" Guid="8672d1ea-7799-402a-9c06-adecd34e9ed6" InformativeScreenshot="f2e3b4af977b177acf4ef08ca4067830.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ERP Solution' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
                     <uix:TargetAnchorable.Anchors>
                       <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                        <uix:Target CvTextArea="1221, 568, 48, 15" CvTextArgument="Senha" CvType="Text" DesignTimeRectangle="1223, 569, 450, 15" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Senha' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Senha' tag='LABEL' type='' class='gx-label col-xs-12 LoginInputLabel control-label' check:innerText='Senha' /&gt;" SearchSteps="FuzzySelector, CV" />
+                        <uix:Target CvTextArea="1221, 568, 48, 15" CvTextArgument="Senha" CvType="Text" DesignTimeRectangle="1223, 569, 450, 15" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Senha' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Senha' tag='LABEL' type='' class='gx-label col-xs-12 LoginInputLabel control-label' check:innerText='Senha' /&gt;" Guid="084651b7-c2d6-4c8f-8516-3880bdc49c58" SearchSteps="FuzzySelector, CV" />
                       </scg:List>
                     </uix:TargetAnchorable.Anchors>
                   </uix:TargetAnchorable>
@@ -159,7 +159,7 @@
                   <uix:TargetAnchorable BrowserURL="http://10.11.116.7:8080/servlet/erpsolution.ambiente.secloginerpsolution" CvTextArea="1234, 610, 123, 14" CvTextArgument="Informe Sua senha" CvType="Text" DesignTimeRectangle="1223, 594, 450, 50" DesignTimeScaleFactor="1" ElementType="InputBoxPassword" FullSelectorArgument="&lt;webctrl id='vSENHA' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='vSENHA' tag='INPUT' type='password' class='LoginInput form-control' placeholder='Informe sua senha' aaname='Senha' /&gt;" Guid="8672d1ea-7799-402a-9c06-adecd34e9ed6" InformativeScreenshot="f2e3b4af977b177acf4ef08ca4067830.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ERP Solution' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
                     <uix:TargetAnchorable.Anchors>
                       <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                        <uix:Target CvTextArea="1221, 568, 48, 15" CvTextArgument="Senha" CvType="Text" DesignTimeRectangle="1223, 569, 450, 15" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Senha' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Senha' tag='LABEL' type='' class='gx-label col-xs-12 LoginInputLabel control-label' check:innerText='Senha' /&gt;" SearchSteps="FuzzySelector, CV" />
+                        <uix:Target CvTextArea="1221, 568, 48, 15" CvTextArgument="Senha" CvType="Text" DesignTimeRectangle="1223, 569, 450, 15" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Senha' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Senha' tag='LABEL' type='' class='gx-label col-xs-12 LoginInputLabel control-label' check:innerText='Senha' /&gt;" Guid="abbf6dde-b9b4-40ef-bea6-413fa859cc9e" SearchSteps="FuzzySelector, CV" />
                       </scg:List>
                     </uix:TargetAnchorable.Anchors>
                   </uix:TargetAnchorable>
@@ -171,7 +171,7 @@
                 <uix:TargetAnchorable BrowserURL="http://10.11.116.7:8080/ERPSolutionWeb_Teste/servlet/erpsolution.ambiente.secloginerpsolution?00000000-0000-0000-0000-000000000000" CvTextArea="1234, 654, 124, 14" CvTextArgument="Informe sua senha" CvType="Text" DesignTimeRectangle="1223, 638, 450, 50" DesignTimeScaleFactor="1" ElementType="InputBoxPassword" FullSelectorArgument="&lt;webctrl id='vSENHA' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='vSENHA' tag='INPUT' type='password' class='LoginInput form-control' placeholder='Informe sua senha' aaname='Senha' /&gt;" Guid="b7db14a4-fb96-46c2-afc4-bc28e614d463" InformativeScreenshot="62b46952fb2b42276f2ef592d32fbfd2.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ERP Solution' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
                     <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                      <uix:Target CvTextArea="1221, 611, 49, 16" CvTextArgument="Senha" CvType="Text" DesignTimeRectangle="1223, 613, 450, 15" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Senha' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Senha' tag='LABEL' type='' class='gx-label col-xs-12 LoginInputLabel control-label' check:innerText='Senha' /&gt;" SearchSteps="FuzzySelector, CV" />
+                      <uix:Target CvTextArea="1221, 611, 49, 16" CvTextArgument="Senha" CvType="Text" DesignTimeRectangle="1223, 613, 450, 15" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Senha' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Senha' tag='LABEL' type='' class='gx-label col-xs-12 LoginInputLabel control-label' check:innerText='Senha' /&gt;" Guid="5ae9adac-93a8-4559-bf1c-fa36afe6cb6a" SearchSteps="FuzzySelector, CV" />
                     </scg:List>
                   </uix:TargetAnchorable.Anchors>
                 </uix:TargetAnchorable>
