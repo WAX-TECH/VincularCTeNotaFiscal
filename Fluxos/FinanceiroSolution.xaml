@@ -98,25 +98,25 @@
       <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="FinanceiroSolution" sap:VirtualizedContainerService.HintSize="512,789" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="FinanceiroSolution" sap:VirtualizedContainerService.HintSize="1853,778.04" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: ERP Solution - Dashboard" sap:VirtualizedContainerService.HintSize="450,701" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" IsIncognito="True" ScopeGuid="4a411dc9-e35e-4b6e-87f9-b9d6c6a56712" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: ERP Solution - Dashboard" sap:VirtualizedContainerService.HintSize="450,673" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" IsIncognito="True" ScopeGuid="4a411dc9-e35e-4b6e-87f9-b9d6c6a56712" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="416,461" sap2010:WorkflowViewState.IdRef="Sequence_23">
+          <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="416,433" sap2010:WorkflowViewState.IdRef="Sequence_23">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="1" DelayBefore="2" DisplayName="Click 'SPAN'" sap:VirtualizedContainerService.HintSize="354,189" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="4a411dc9-e35e-4b6e-87f9-b9d6c6a56712" Version="V3">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="1" DelayBefore="3" DisplayName="Click 'SPAN'" sap:VirtualizedContainerService.HintSize="382,189" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="4a411dc9-e35e-4b6e-87f9-b9d6c6a56712" Version="V3">
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="http://10.11.116.7:8080/ERPSolutionWeb_Teste/servlet/erpsolution.ambiente.wpdashboard" CvTextArea="290, 146, 61, 14" CvTextArgument="BANCOS" CvType="Text" DesignTimeRectangle="284, 127, 73, 52" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl id='DIVHEADER_MPAGE' tag='TABLE' /&gt;&lt;webctrl parentid='TBMODULONOME_MPAGE' tableRow='1' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl id='DIVHEADER_MPAGE' tag='TABLE' /&gt;&lt;webctrl parentid='TBMODULONOME_MPAGE' type='' tag='A' class='' aaname='BANCOS' check:innerText='BANCOS' /&gt;" Guid="94317779-17a2-45ee-b861-5c0cbeea51b7" InformativeScreenshot="5b13900a0526be6b143bdb759581d001.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ERP Solution - Dashboard' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
@@ -127,7 +127,7 @@
                 </uix:TargetAnchorable>
               </uix:NClick.Target>
             </uix:NClick>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="2" DisplayName="Click 'imagemsec02 Url'" sap:VirtualizedContainerService.HintSize="354,182" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="4a411dc9-e35e-4b6e-87f9-b9d6c6a56712" Version="V3">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="5" DisplayName="Click 'imagemsec02 Url'" sap:VirtualizedContainerService.HintSize="382,182" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="4a411dc9-e35e-4b6e-87f9-b9d6c6a56712" Version="V3">
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="http://10.11.116.7:8080/ERPSolutionWeb_Teste/servlet/erpsolution.ambiente.wpdashboard" CVScreenId="85e7fc12-1532-43da-8084-2fa87fda9a78" CvElementArea="1434, 251, 181, 205" CvTextArea="1477, 417, 90, 15" CvTextArgument="FINANCEIRO" CvType="Button" DesignTimeRectangle="1440, 398, 169, 56" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='FINANCEIRO' href='erpsolution.ambiente.wptrocamodulo?8BdGT_1K_LDPzOyTuU8n7EI16bKfi*' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='FINANCEIRO' href='erpsolution.ambiente.wptrocamodulo?8BdGT_1K_LDPzOyTuU8n7EI16bKfi*' tag='A' type='' class='' check:innerText='FINANCEIRO' /&gt;" Guid="0f86e14c-f7a1-4bec-8afe-a260a05c6932" InformativeScreenshot="8db739ea36a50a33023e9c8b756067e1.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ERP Solution - Dashboard' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>

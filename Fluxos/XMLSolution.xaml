@@ -1,6 +1,8 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="XMLSolution" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="XMLSolution" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.ComponentModel;assembly=System.ComponentModel.TypeConverter" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="in_Arquivo" Type="InArgument(x:String)" />
+    <x:Property Name="in_Remetente" Type="InArgument(x:String)" />
+    <x:Property Name="in_Recebedor" Type="InArgument(x:String)" />
   </x:Members>
   <VisualBasic.Settings>
     <x:Null />
@@ -116,30 +118,30 @@
       <AssemblyReference>UiPath.Workflow</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="XMLSolution" sap:VirtualizedContainerService.HintSize="704,5269" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="XMLSolution" sap:VirtualizedContainerService.HintSize="1836,5659" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Use Browser Chrome: ERP Solution" sap:VirtualizedContainerService.HintSize="642,5181" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" IsIncognito="True" ScopeGuid="53042334-00c5-4636-acb7-2dc35c54d80e" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Use Browser Chrome: ERP Solution" sap:VirtualizedContainerService.HintSize="586,5636" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" IsIncognito="True" ScopeGuid="53042334-00c5-4636-acb7-2dc35c54d80e" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="608,4941" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="552,5396" sap2010:WorkflowViewState.IdRef="Sequence_3">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT vPESQUISA_MPAGE'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="546,250" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="53042334-00c5-4636-acb7-2dc35c54d80e" Text="2425" Version="V3">
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT vPESQUISA_MPAGE'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="518,250" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="53042334-00c5-4636-acb7-2dc35c54d80e" Text="2425" Version="V3">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable BrowserURL="http://10.11.116.7:8080/ERPSolutionWeb_Teste/servlet/erpsolution.ambiente.wpdashboard" CVScreenId="524b3af1-79a6-4f67-a85e-7de8f5535391" CvTextArea="1270, 206, 123, 15" CvTextArgument="Procurar rotina..." CvType="Text" DesignTimeRectangle="1262, 198, 370, 31" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='TBPEQUISA_MPAGE' tableRow='1' tag='TABLE' /&gt;&lt;webctrl id='vPESQUISA_MPAGE' tableRow='1' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='TBPEQUISA_MPAGE' tag='TABLE' /&gt;&lt;webctrl id='vPESQUISA_MPAGE' type='text' tag='INPUT' class='' placeholder='Procurar rotina...' aaname='Procurar rotina...' /&gt;" Guid="cf745974-43b0-4d9a-b5fd-3407d9a878f7" InformativeScreenshot="8f2534a498a0e71ffd8d2187469e8dea.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ERP Solution - Dashboard' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
               </uix:NTypeInto.Target>
             </uix:NTypeInto>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'SPAN'" sap:VirtualizedContainerService.HintSize="546,189" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="53042334-00c5-4636-acb7-2dc35c54d80e" Version="V3">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'SPAN'" sap:VirtualizedContainerService.HintSize="518,189" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="53042334-00c5-4636-acb7-2dc35c54d80e" Version="V3">
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="http://10.11.116.7:8080/ERPSolutionWeb_Teste/servlet/erpsolution.ambiente.wpdashboard" DesignTimeRectangle="1598, 202, 25, 25" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl id='TBPEQUISA_MPAGE' tableRow='1' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl id='TBPEQUISA_MPAGE' tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='glyphicon glyphicon-search' aaname='' /&gt;" Guid="b265cd29-8bca-47b8-981c-30d4dd156fcb" InformativeScreenshot="2b5b22a1914396caaca0c792801e7664.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ERP Solution - Dashboard' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
@@ -150,15 +152,15 @@
                 </uix:TargetAnchorable>
               </uix:NClick.Target>
             </uix:NClick>
-            <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="546,211" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" Shortcuts="[d(hk)][d(ctrl)][k(tab)][u(ctrl)][u(hk)]" Version="V3" />
-            <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="546,211" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_2" Shortcuts="[d(hk)][d(ctrl)]w[u(ctrl)][u(hk)]" Version="V3" />
-            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Consulta XML CT-e Lançados\Baixados - 2425" sap:VirtualizedContainerService.HintSize="546,3992" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="6616bf61-862b-43f6-9b84-6849392bac70" Version="V2">
+            <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="518,211" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" Shortcuts="[d(hk)][d(ctrl)][k(tab)][u(ctrl)][u(hk)]" Version="V3" />
+            <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="518,211" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_2" Shortcuts="[d(hk)][d(ctrl)]w[u(ctrl)][u(hk)]" Version="V3" />
+            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Consulta XML CT-e Lançados\Baixados - 2425" sap:VirtualizedContainerService.HintSize="518,4473" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="6616bf61-862b-43f6-9b84-6849392bac70" Version="V2">
               <uix:NApplicationCard.Body>
                 <ActivityAction x:TypeArguments="x:Object">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="512,3750" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                  <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="484,4231" sap2010:WorkflowViewState.IdRef="Sequence_4">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -210,17 +212,51 @@
                         </uix:TargetAnchorable>
                       </uix:NClick.Target>
                     </uix:NClick>
-                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'FRETE - DESPESA'" sap:VirtualizedContainerService.HintSize="450,189" sap2010:WorkflowViewState.IdRef="NClick_10" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6616bf61-862b-43f6-9b84-6849392bac70" Version="V3">
-                      <uix:NClick.Target>
-                        <uix:TargetAnchorable BrowserURL="http://10.11.116.7:8080/ERPSolutionWeb_Teste/servlet/erpsolution.estoque.estoperacaoselecionar?,F,0,,gxPopupLevel%3D0%3B" CVScreenId="ccd6d109-a5eb-476a-b377-5c9d821d18c8" CvElementArea="429, 599, 35, 35" CvType="Icon" DesignTimeRectangle="433, 600, 31, 31" DesignTimeScaleFactor="1.25" ElementType="Icon" FullSelectorArgument="&lt;webctrl id='gxp0_ifrm' tag='IFRAME' /&gt;&lt;webctrl id='GridContainerTbl' tag='TABLE' /&gt;&lt;webctrl id='vSELECT_0002' tableRow='3' tag='IMG' /&gt;" FuzzySelectorArgument="&lt;webctrl id='gxp0_ifrm' tag='IFRAME' /&gt;&lt;webctrl id='GridContainerTbl' tag='TABLE' /&gt;&lt;webctrl id='vSELECT_0002' type='' tag='IMG' class='Image' aaname='Selecionar' /&gt;" Guid="2f1369e8-bb8d-41b3-9891-48d3b315d56c" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAUSSURBVFhH7Vdbb1RVFPZ/aC+QKLU3iFILiSh1BMODklgi0SIR05TIA0QeJSJiii3pQyMvA5akFqnYDg+2PFjSxHmRF0kTJ216GZs2TZqmznRa6WV6neV8C7/tOpuDwTcf/JKdtc+6fOs76+w5M/OU/Ifwv5jHISAml8v9tfsb9NnYP+URYfm+9eHEIGFra8tZAJb7zc1NjcECzA2D5bB1sDbGa0LFMAF2Y2ND9yheX19XHywAv/XBLi0tye3bMenv75dkMinz8/N5jvVALrjAa/lheWNEYDIophBbDJtK/S537vTKpUuNks1mNQ/+TCYjRUUFUlDwtJSUPCeHDr2hPk6CfBTAa8YtApPxEyEO+76+H+Xo0XeksrJcCgufkUQi4WqWl5fl+vU2aW7+UurrP5STJxvcDZAHyxfCZeHEAEgm0erqqiM5deojvfOamlelp+cHWVxcDDTAnrWsp+3q+l5isW6N8+awEPfhHpMVwkRY+DOZOYlGo5JOpzQOkNQ2pmVsdnZWdu2qlJ07K6Szs9MJRwx7XhOPPcArKytqWcgYLf1hQsiBs3Xr1neyd291/hFX6FSRgxgPt8UjBxj27t0+PSMjIyNOCGNsxL1vuWf+2tqa3Lz5rRw4EJF79352MXJgEU4M7ghIp9NSV/euHtSmpqbAXSAHC3u/KSdiY7DwIwdTYj44yWURmAyS8PGtqCiTSKRGP6IkZjFybDNLzJjvo7UTgQ/WIjAZEF27FtX3RW9vjybncg8bkNAKocWyMeTaRSGI4SU5PT2tPsQsnBgAyQA+Bdnsiu7ZyArAOWBz+qylCPo4EbwSDh58XY4cqdW9DyeG6tkYIKnfDJZi6OM18rGnZQzXeHcdPvym7N79gntNYBEqxjpR6BPbZiRmjOPntR+zPtSfPfuxbN9eLENDQ9rPIvCY5ubmZHJyUh48+ENJ0AQEsD4xfcyxDa0Qxljb0tKiZ3JgYEB7op5wkwFisZh+pK9ejToiNsM1CemDpQg/xnq7RwznbWFhQcUi3yIgJh6P63cQvplZTDIUWmL6rBBYf4LMt1yMsy8ReEwTExOyY8ezcuxYnd6BHbUVAhIrgsR8bPTZfNYzbi0RmAw+bsePvy+NjV+4b20U+ISwfjMrhHn08RqPZ2xsVHNws4hZuMmQkEkoDhMCH4XQcoLMx96vw/78+U+ltLREuru7nA+LcJNhkCRshGWb0YYJoS9MyODgoJSVPS/79r0s9+//4qZmETgzlhiJ4+O/uS84ELMhm4RNhJO1QvDIT5z4QIqLC+XcuU/ydQ/f4D6cGN4VFoguX26W8vJS6ej4RhswjphtRiHw8W4Zw6IPP1UbGurzNziu/Vhr4R4TFoJsip+L+JVWXV0l7e3tSsomdiJYFGCFYE/LmD2P9FkEJkMiWFzjLwgE1da+rUSIPamQROJXuXjx80fqbD6uLQKTYSKSWBCP/6SjxZ6E+E2MnwI4C/iPBDB/ampKLlz4TH8TbdtWJK2traHCOSULNxkmohmLeSdYFDIzMyN79ryU//Z9S86cOS1XrnylccSAGzc69Itw//5XVFQyOebiFEJLfsJNBgEsirCCIAQ5WMPDw/k39HtSVfWiNo1EXlMi5qZSKWlr+1oPbNgZ4Q3TWrjJAGhKERTAicBHAnzc8TYdHR1VcbYZOZiLRS6KQwzLR+AxgQQWBPRhb2OwjBH0MZcW8Dlh7d7yBMT4oO/fxp4UwVqRPwEblzlErJBVlwAAAABJRU5ErkJggg==" InformativeScreenshot="cf1f37c9861475cbccc6f989720f9a5a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Importação de CT-e' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
-                          <uix:TargetAnchorable.Anchors>
-                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                              <uix:Target CVScreenId="ccd6d109-a5eb-476a-b377-5c9d821d18c8" CvTextArea="586, 607, 211, 15" CvTextArgument="FRETES - TRANSFERENCIAS" CvType="Text" DesignTimeRectangle="576, 594, 252, 44" FullSelectorArgument="&lt;webctrl id='gxp0_ifrm' tag='IFRAME' /&gt;&lt;webctrl id='GridContainerTbl' tag='TABLE' /&gt;&lt;webctrl tableCol='3' tableRow='3' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl id='gxp0_ifrm' tag='IFRAME' /&gt;&lt;webctrl id='GridContainerTbl' tag='TABLE' /&gt;&lt;webctrl type='' class='gx-tab-padding-fix-1 gx-attribute WWColumn' tag='TD' aaname='' check:innerText='FRETES - TRANSFERENCIAS' /&gt;" Guid="6e92ebff-c696-4e9c-b632-be3452c78d89" SearchSteps="FuzzySelector" />
-                            </scg:List>
-                          </uix:TargetAnchorable.Anchors>
-                        </uix:TargetAnchorable>
-                      </uix:NClick.Target>
-                    </uix:NClick>
+                    <ui:IfElseIfV2 Condition="[in_Recebedor = &quot;BTG&quot; And in_Remetente = &quot;BTG&quot;]" DisplayName="Else If" sap:VirtualizedContainerService.HintSize="450,698" sap2010:WorkflowViewState.IdRef="IfElseIfV2_1">
+                      <ui:IfElseIfV2.Else>
+                        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,240" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'FRETE - DESPESA'" sap:VirtualizedContainerService.HintSize="382,180" sap2010:WorkflowViewState.IdRef="NClick_32" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6616bf61-862b-43f6-9b84-6849392bac70" Version="V3">
+                            <uix:NClick.Target>
+                              <uix:TargetAnchorable BrowserURL="http://10.11.116.7:8080/ERPSolutionWeb_Teste/servlet/erpsolution.estoque.estoperacaoselecionar?,F,0,,gxPopupLevel%3D0%3B" CVScreenId="c487318e-8db2-4d49-867b-f08afb6b1b12" CvElementArea="537, 600, 29, 28" CvType="Icon" DesignTimeRectangle="539, 601, 25, 25" DesignTimeScaleFactor="1" ElementType="Icon" FullSelectorArgument="&lt;webctrl id='gxp0_ifrm' tag='IFRAME' /&gt;&lt;webctrl id='GridContainerTbl' tag='TABLE' /&gt;&lt;webctrl id='vSELECT_0003' tableRow='4' tag='IMG' /&gt;" FuzzySelectorArgument="&lt;webctrl id='gxp0_ifrm' tag='IFRAME' /&gt;&lt;webctrl id='GridContainerTbl' tag='TABLE' /&gt;&lt;webctrl id='vSELECT_0003' type='' tag='IMG' class='Image' aaname='Selecionar' /&gt;" Guid="9b15bc19-e143-40e2-8e0b-e142eef5843b" InformativeScreenshot="56698dbccef9d31a2c116de4c7bda3c3.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Importação de CT-e' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                    <uix:Target CVScreenId="c487318e-8db2-4d49-867b-f08afb6b1b12" CvTextArea="662, 607, 85, 12" CvTextArgument="FRETES - CTC" CvType="Text" DesignTimeRectangle="663, 607, 83, 14" ElementType="Text" FullSelectorArgument="&lt;webctrl id='gxp0_ifrm' tag='IFRAME' /&gt;&lt;webctrl id='GridContainerTbl' tag='TABLE' /&gt;&lt;webctrl aaname='FRETES - CTC' tableRow='4' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl id='gxp0_ifrm' tag='IFRAME' /&gt;&lt;webctrl id='GridContainerTbl' tag='TABLE' /&gt;&lt;webctrl aaname='FRETES - CTC' type='' tag='SPAN' class='ReadonlyAttGrid' check:innerText='FRETES - CTC' /&gt;" Guid="77f566cb-bafb-4932-8775-a03d643dda58" SearchSteps="FuzzySelector" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NClick.Target>
+                          </uix:NClick>
+                        </Sequence>
+                      </ui:IfElseIfV2.Else>
+                      <ui:IfElseIfV2.ElseIfs>
+                        <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True" />
+                      </ui:IfElseIfV2.ElseIfs>
+                      <ui:IfElseIfV2.Then>
+                        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,240" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'FRETE - DESPESA'" sap:VirtualizedContainerService.HintSize="382,180" sap2010:WorkflowViewState.IdRef="NClick_10" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6616bf61-862b-43f6-9b84-6849392bac70" Version="V3">
+                            <uix:NClick.Target>
+                              <uix:TargetAnchorable BrowserURL="http://10.11.116.7:8080/ERPSolutionWeb_Teste/servlet/erpsolution.estoque.estoperacaoselecionar?,F,0,,gxPopupLevel%3D0%3B" CVScreenId="ccd6d109-a5eb-476a-b377-5c9d821d18c8" CvElementArea="429, 599, 35, 35" CvType="Icon" DesignTimeRectangle="433, 600, 31, 31" DesignTimeScaleFactor="1.25" ElementType="Icon" FullSelectorArgument="&lt;webctrl id='gxp0_ifrm' tag='IFRAME' /&gt;&lt;webctrl id='GridContainerTbl' tag='TABLE' /&gt;&lt;webctrl id='vSELECT_0002' tableRow='3' tag='IMG' /&gt;" FuzzySelectorArgument="&lt;webctrl id='gxp0_ifrm' tag='IFRAME' /&gt;&lt;webctrl id='GridContainerTbl' tag='TABLE' /&gt;&lt;webctrl id='vSELECT_0002' type='' tag='IMG' class='Image' aaname='Selecionar' /&gt;" Guid="2f1369e8-bb8d-41b3-9891-48d3b315d56c" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAUSSURBVFhH7Vdbb1RVFPZ/aC+QKLU3iFILiSh1BMODklgi0SIR05TIA0QeJSJiii3pQyMvA5akFqnYDg+2PFjSxHmRF0kTJ216GZs2TZqmznRa6WV6neV8C7/tOpuDwTcf/JKdtc+6fOs76+w5M/OU/Ifwv5jHISAml8v9tfsb9NnYP+URYfm+9eHEIGFra8tZAJb7zc1NjcECzA2D5bB1sDbGa0LFMAF2Y2ND9yheX19XHywAv/XBLi0tye3bMenv75dkMinz8/N5jvVALrjAa/lheWNEYDIophBbDJtK/S537vTKpUuNks1mNQ/+TCYjRUUFUlDwtJSUPCeHDr2hPk6CfBTAa8YtApPxEyEO+76+H+Xo0XeksrJcCgufkUQi4WqWl5fl+vU2aW7+UurrP5STJxvcDZAHyxfCZeHEAEgm0erqqiM5deojvfOamlelp+cHWVxcDDTAnrWsp+3q+l5isW6N8+awEPfhHpMVwkRY+DOZOYlGo5JOpzQOkNQ2pmVsdnZWdu2qlJ07K6Szs9MJRwx7XhOPPcArKytqWcgYLf1hQsiBs3Xr1neyd291/hFX6FSRgxgPt8UjBxj27t0+PSMjIyNOCGNsxL1vuWf+2tqa3Lz5rRw4EJF79352MXJgEU4M7ghIp9NSV/euHtSmpqbAXSAHC3u/KSdiY7DwIwdTYj44yWURmAyS8PGtqCiTSKRGP6IkZjFybDNLzJjvo7UTgQ/WIjAZEF27FtX3RW9vjybncg8bkNAKocWyMeTaRSGI4SU5PT2tPsQsnBgAyQA+Bdnsiu7ZyArAOWBz+qylCPo4EbwSDh58XY4cqdW9DyeG6tkYIKnfDJZi6OM18rGnZQzXeHcdPvym7N79gntNYBEqxjpR6BPbZiRmjOPntR+zPtSfPfuxbN9eLENDQ9rPIvCY5ubmZHJyUh48+ENJ0AQEsD4xfcyxDa0Qxljb0tKiZ3JgYEB7op5wkwFisZh+pK9ejToiNsM1CemDpQg/xnq7RwznbWFhQcUi3yIgJh6P63cQvplZTDIUWmL6rBBYf4LMt1yMsy8ReEwTExOyY8ezcuxYnd6BHbUVAhIrgsR8bPTZfNYzbi0RmAw+bsePvy+NjV+4b20U+ISwfjMrhHn08RqPZ2xsVHNws4hZuMmQkEkoDhMCH4XQcoLMx96vw/78+U+ltLREuru7nA+LcJNhkCRshGWb0YYJoS9MyODgoJSVPS/79r0s9+//4qZmETgzlhiJ4+O/uS84ELMhm4RNhJO1QvDIT5z4QIqLC+XcuU/ydQ/f4D6cGN4VFoguX26W8vJS6ej4RhswjphtRiHw8W4Zw6IPP1UbGurzNziu/Vhr4R4TFoJsip+L+JVWXV0l7e3tSsomdiJYFGCFYE/LmD2P9FkEJkMiWFzjLwgE1da+rUSIPamQROJXuXjx80fqbD6uLQKTYSKSWBCP/6SjxZ6E+E2MnwI4C/iPBDB/ampKLlz4TH8TbdtWJK2traHCOSULNxkmohmLeSdYFDIzMyN79ryU//Z9S86cOS1XrnylccSAGzc69Itw//5XVFQyOebiFEJLfsJNBgEsirCCIAQ5WMPDw/k39HtSVfWiNo1EXlMi5qZSKWlr+1oPbNgZ4Q3TWrjJAGhKERTAicBHAnzc8TYdHR1VcbYZOZiLRS6KQwzLR+AxgQQWBPRhb2OwjBH0MZcW8Dlh7d7yBMT4oO/fxp4UwVqRPwEblzlErJBVlwAAAABJRU5ErkJggg==" InformativeScreenshot="cf1f37c9861475cbccc6f989720f9a5a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Importação de CT-e' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                    <uix:Target CVScreenId="ccd6d109-a5eb-476a-b377-5c9d821d18c8" CvTextArea="586, 607, 211, 15" CvTextArgument="FRETES - TRANSFERENCIAS" CvType="Text" DesignTimeRectangle="576, 594, 252, 44" FullSelectorArgument="&lt;webctrl id='gxp0_ifrm' tag='IFRAME' /&gt;&lt;webctrl id='GridContainerTbl' tag='TABLE' /&gt;&lt;webctrl tableCol='3' tableRow='3' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl id='gxp0_ifrm' tag='IFRAME' /&gt;&lt;webctrl id='GridContainerTbl' tag='TABLE' /&gt;&lt;webctrl type='' class='gx-tab-padding-fix-1 gx-attribute WWColumn' tag='TD' aaname='' check:innerText='FRETES - TRANSFERENCIAS' /&gt;" Guid="6e92ebff-c696-4e9c-b632-be3452c78d89" SearchSteps="FuzzySelector" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NClick.Target>
+                          </uix:NClick>
+                        </Sequence>
+                      </ui:IfElseIfV2.Then>
+                    </ui:IfElseIfV2>
                     <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Seguinte'" sap:VirtualizedContainerService.HintSize="450,189" sap2010:WorkflowViewState.IdRef="NClick_11" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6616bf61-862b-43f6-9b84-6849392bac70" Version="V3">
                       <uix:NClick.Target>
                         <uix:TargetAnchorable BrowserURL="http://10.11.116.7:8080/ERPSolutionWeb_Teste/servlet/erpsolution.compras.estctedestinatarioimportarwizard?K8mZWxWBOcrEYpdWx7qE_9hCkgmve2fEbdiqot6GjJevVp3BW1onMKg00t9eIwIOyIiYpiuxwDCHYtotl3wiMzw9HOGwlqv-b-3ESksqK5MGIpkK5llcs2WtWnap3y2-58S0Om5m4d1WQJhw5Rt6XB250FQWAOEyFE4uGIMVTpc" CVScreenId="a7b94452-05c0-4584-9cf7-ab7448555238" CvElementArea="1741, 404, 141, 50" CvTextArea="1777, 421, 68, 13" CvTextArgument="SEGUINTE" CvType="Button" DesignTimeRectangle="1743, 471, 138, 45" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;webctrl name='W0021BTNWIZARDNEXT' tag='INPUT' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl name='W0021BTNWIZARDNEXT' tag='INPUT' type='button' class='BtnDefault btn btn-default' aaname='Seguinte' check:text='Seguinte' /&gt;" Guid="d7c8cef5-f746-4885-9a9a-0e7699eaa7a8" InformativeScreenshot="f603280e74fb7806c4ea9cc4097d33a7.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Importação de CT-e' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive" />
