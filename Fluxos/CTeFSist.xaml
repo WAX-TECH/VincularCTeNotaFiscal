@@ -114,7 +114,7 @@
       <AssemblyReference>System.Data.SqlClient</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="CTeFSist" sap:VirtualizedContainerService.HintSize="1268.8,3912" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="CTeFSist" sap:VirtualizedContainerService.HintSize="1836,3816" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="ExtractDataTable" />
     </Sequence.Variables>
@@ -123,24 +123,24 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Use Browser Chrome: FSist - Entrar" sap:VirtualizedContainerService.HintSize="1206.4,3823.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" IsIncognito="True" ScopeGuid="01cc8db9-5b75-4454-b8da-a76cfe70198e" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Use Browser Chrome: FSist - Entrar" sap:VirtualizedContainerService.HintSize="1178,3793" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" IsIncognito="True" ScopeGuid="01cc8db9-5b75-4454-b8da-a76cfe70198e" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="1172.8,3583.2" sap2010:WorkflowViewState.IdRef="Sequence_6">
+          <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="1144,3553" sap2010:WorkflowViewState.IdRef="Sequence_6">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'CTe'" sap:VirtualizedContainerService.HintSize="1110.4,189.6" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="01cc8db9-5b75-4454-b8da-a76cfe70198e" Version="V3">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'CTe'" sap:VirtualizedContainerService.HintSize="1110,189" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="01cc8db9-5b75-4454-b8da-a76cfe70198e" Version="V3">
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="https://www.fsist.com.br/usuario/monitor-de-notas" CVScreenId="9070f0e0-4d17-4155-b398-46f4ca7ec93e" CvElementArea="1862, 307, 58, 46" CvTextArea="1875, 320, 35, 18" CvTextArgument="CTe" CvType="Button" DesignTimeRectangle="1866, 309, 54, 43" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='divGuias' tag='TABLE' /&gt;&lt;webctrl id='TabPageDirCTe' tableRow='1' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='divGuias' tag='TABLE' /&gt;&lt;webctrl id='TabPageDirCTe' type='' tag='DIV' class='but-ads but-ads-tab' aaname='CTe' check:innerText='CTe' /&gt;" Guid="b5d0cf75-298b-4fec-a778-abea2cbe866d" InformativeScreenshot="3e32ba7eae500c36ef084929ee9219e7.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='FSist - Monitor de Notas' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive" />
               </uix:NClick.Target>
             </uix:NClick>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Período'" sap:VirtualizedContainerService.HintSize="1110.4,189.6" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="01cc8db9-5b75-4454-b8da-a76cfe70198e" Version="V3">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Período'" sap:VirtualizedContainerService.HintSize="1110,189" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="01cc8db9-5b75-4454-b8da-a76cfe70198e" Version="V3">
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="https://www.fsist.com.br/usuario/monitor-de-notas" CVScreenId="ba8f74a4-a3ea-4820-b763-db0bf1102606" CvTextArea="394, 410, 177, 17" CvTextArgument="18/06/2024 a 16/09/2024" CvType="Text" DesignTimeRectangle="350, 396, 265, 43" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl parentid='ComboData' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='ComboData' tag='DIV' type='' class='but-ads' aaname='                                                                                                                                                ' /&gt;" Guid="4dab7963-168a-4b19-bcbb-da44fd331aa3" InformativeScreenshot="342b90cf3b576e0fd97ae622f8f351d1.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='FSist - Monitor de Notas' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
@@ -151,7 +151,7 @@
                 </uix:TargetAnchorable>
               </uix:NClick.Target>
             </uix:NClick>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Data Inicial'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="1110.4,250.4" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="01cc8db9-5b75-4454-b8da-a76cfe70198e" Text="[DateTime.Now.AddDays(-1).ToString(&quot;dd/MM/yyyy&quot;)]" Version="V3">
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Data Inicial'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="1110,250" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="01cc8db9-5b75-4454-b8da-a76cfe70198e" Text="[DateTime.Now.ToString(&quot;dd/MM/yyyy&quot;)]" Version="V3">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable BrowserURL="https://www.fsist.com.br/usuario/monitor-de-notas" CVScreenId="c8a6483b-7633-4dce-bf9c-35c121d5eb99" CvTextArea="381, 496, 95, 17" CvTextArgument="18/06/2024" CvType="Text" DesignTimeRectangle="367, 483, 162, 43" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl parentid='DivData' tag='TABLE' /&gt;&lt;webctrl id='data1' tableRow='2' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='DivData' tag='TABLE' /&gt;&lt;webctrl id='data1' type='text' tag='INPUT' class='form-control add-on' aaname='' /&gt;" Guid="ea50cc38-b971-44e7-916e-1963f3706293" InformativeScreenshot="2b1c58df06b5037bc6df118ff7aef66e.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='FSist - Monitor de Notas' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
@@ -162,7 +162,7 @@
                 </uix:TargetAnchorable>
               </uix:NTypeInto.Target>
             </uix:NTypeInto>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Data Final'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="1110.4,250.4" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="01cc8db9-5b75-4454-b8da-a76cfe70198e" Text="[DateTime.Now.ToString(&quot;dd/MM/yyyy&quot;)]" Version="V3">
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Data Final'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="1110,250" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="01cc8db9-5b75-4454-b8da-a76cfe70198e" Text="[DateTime.Now.ToString(&quot;dd/MM/yyyy&quot;)]" Version="V3">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable BrowserURL="https://www.fsist.com.br/usuario/monitor-de-notas" CVScreenId="c8a6483b-7633-4dce-bf9c-35c121d5eb99" CvTextArea="572, 495, 95, 18" CvTextArgument="16/09/2024" CvType="Text" DesignTimeRectangle="558, 483, 162, 43" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl parentid='DivData' tag='TABLE' /&gt;&lt;webctrl id='data2' tableRow='2' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='DivData' tag='TABLE' /&gt;&lt;webctrl id='data2' type='text' tag='INPUT' class='form-control add-on' aaname='' /&gt;" Guid="5c151d03-6b87-4e8a-9eeb-4d0f099809e6" InformativeScreenshot="91b4e8ecde8ab85763d98dcbdd4cffe1.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='FSist - Monitor de Notas' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
@@ -173,7 +173,7 @@
                 </uix:TargetAnchorable>
               </uix:NTypeInto.Target>
             </uix:NTypeInto>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'CONFIRMAR'" sap:VirtualizedContainerService.HintSize="1110.4,189.6" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="01cc8db9-5b75-4454-b8da-a76cfe70198e" Version="V3">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'CONFIRMAR'" sap:VirtualizedContainerService.HintSize="1110,189" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="01cc8db9-5b75-4454-b8da-a76cfe70198e" Version="V3">
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="https://www.fsist.com.br/usuario/monitor-de-notas" CVScreenId="bb090f4d-04b7-4d81-b956-b5dec643e4ec" CvElementArea="291, 496, 103, 33" CvTextArea="303, 506, 78, 12" CvTextArgument="CONFIRMAR" CvType="Button" DesignTimeRectangle="292, 497, 101, 30" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='INPUT' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='button' class='but' aaname='CONFIRMAR' /&gt;" Guid="d57ffb9b-2c4a-4d80-bd10-2de7db54925b" InformativeScreenshot="cdf914fa9c5f85a9b40624ac6ce1d420.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='FSist - Monitor de Notas' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive" />
               </uix:NClick.Target>

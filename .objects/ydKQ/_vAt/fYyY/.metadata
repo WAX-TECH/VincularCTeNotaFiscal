@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Chrome Consulta XML CT-e LançadosBaixados - 2",
+  "Type": "Screen",
+  "Id": "fYyYwjyVoU2G22moatMbmg",
+  "Reference": "ybwzfI7n4U6Yqw9BXwP4-w/fYyYwjyVoU2G22moatMbmg",
+  "ParentRef": "ybwzfI7n4U6Yqw9BXwP4-w/_vAt11G9kkKTWpWW913R6w",
+  "Created": "2024-10-08T16:54:20.1090084Z",
+  "Updated": "2024-10-08T16:54:20.1090084Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.4.2.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.10.2.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

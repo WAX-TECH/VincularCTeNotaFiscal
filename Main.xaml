@@ -132,7 +132,7 @@
       <x:Boolean x:Key="ShouldExpandAll">True</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1836,3569" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1836,4142" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="username" />
       <Variable x:TypeArguments="ss:SecureString" Name="password" />
@@ -153,8 +153,8 @@
         <x:Boolean x:Key="IsPinned">False</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="620,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Iniciando Processo...&quot;]" />
-    <Sequence DisplayName="PASTAS" sap:VirtualizedContainerService.HintSize="620,57" sap2010:WorkflowViewState.IdRef="Sequence_22">
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="586,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Iniciando Processo...&quot;]" />
+    <Sequence DisplayName="PASTAS" sap:VirtualizedContainerService.HintSize="586,57" sap2010:WorkflowViewState.IdRef="Sequence_22">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -179,7 +179,7 @@
         </sap:WorkflowViewStateService.ViewState>
       </ui:InvokeWorkflowFile>
     </Sequence>
-    <Sequence DisplayName="URL E CREDENCIAIS" sap:VirtualizedContainerService.HintSize="620,57" sap2010:WorkflowViewState.IdRef="Sequence_23">
+    <Sequence DisplayName="URL E CREDENCIAIS" sap:VirtualizedContainerService.HintSize="586,57" sap2010:WorkflowViewState.IdRef="Sequence_23">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -187,101 +187,84 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <ui:LogMessage DisplayName="URL E CREDENCIAIS" sap:VirtualizedContainerService.HintSize="450,173" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Acessando URL e Credenciais do Orchestrator&quot;]" />
-      <Sequence DisplayName="FSIST" sap:VirtualizedContainerService.HintSize="450,461" sap2010:WorkflowViewState.IdRef="Sequence_24">
+      <Sequence DisplayName="FSIST" sap:VirtualizedContainerService.HintSize="450,433" sap2010:WorkflowViewState.IdRef="Sequence_24">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
             <x:Boolean x:Key="IsPinned">False</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <ui:GetRobotAsset TimeoutMS="{x:Null}" AssetName="Fsist_url" CacheStrategy="None" DisplayName="Get Asset" FolderPath="BTG CASE DEV" sap:VirtualizedContainerService.HintSize="388,175" sap2010:WorkflowViewState.IdRef="GetRobotAsset_9">
+        <ui:GetRobotAsset TimeoutMS="{x:Null}" AssetName="Fsist_url" CacheStrategy="None" DisplayName="Get Asset" FolderPath="BTG CASE DEV" sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="GetRobotAsset_9">
           <ui:GetRobotAsset.Value>
             <OutArgument x:TypeArguments="x:String">[strURLFsist]</OutArgument>
           </ui:GetRobotAsset.Value>
         </ui:GetRobotAsset>
-        <ui:GetRobotCredential TimeoutMS="{x:Null}" AssetName="Fsist_Cred" CacheStrategy="None" DisplayName="Get Credential" FolderPath="BTG CASE DEV" sap:VirtualizedContainerService.HintSize="387.2,166.4" sap2010:WorkflowViewState.IdRef="GetRobotCredential_8" Password="[passwordFsist]" Username="[usernameFsist]" />
+        <ui:GetRobotCredential TimeoutMS="{x:Null}" AssetName="Fsist_Cred" CacheStrategy="None" DisplayName="Get Credential" FolderPath="BTG CASE DEV" sap:VirtualizedContainerService.HintSize="416,166" sap2010:WorkflowViewState.IdRef="GetRobotCredential_8" Password="[passwordFsist]" Username="[usernameFsist]" />
       </Sequence>
-      <Sequence DisplayName="SOLUTION" sap:VirtualizedContainerService.HintSize="449.6,453.6" sap2010:WorkflowViewState.IdRef="Sequence_25">
+      <Sequence DisplayName="SOLUTION" sap:VirtualizedContainerService.HintSize="450,424" sap2010:WorkflowViewState.IdRef="Sequence_25">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
             <x:Boolean x:Key="IsPinned">False</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <ui:GetRobotAsset TimeoutMS="{x:Null}" AssetName="Caminho_URL" CacheStrategy="None" DisplayName="Get Asset" FolderPath="BTG CASE DEV" sap:VirtualizedContainerService.HintSize="387.2,175.2" sap2010:WorkflowViewState.IdRef="GetRobotAsset_12">
+        <ui:GetRobotAsset TimeoutMS="{x:Null}" AssetName="Caminho_URL" CacheStrategy="None" DisplayName="Get Asset" FolderPath="BTG CASE DEV" sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="GetRobotAsset_12">
           <ui:GetRobotAsset.Value>
             <OutArgument x:TypeArguments="x:String">[strUrl]</OutArgument>
           </ui:GetRobotAsset.Value>
         </ui:GetRobotAsset>
-        <ui:GetRobotCredential TimeoutMS="{x:Null}" AssetName="Erp_Solution_Login" CacheStrategy="None" DisplayName="Get Credential" FolderPath="BTG CASE DEV" sap:VirtualizedContainerService.HintSize="387.2,166.4" sap2010:WorkflowViewState.IdRef="GetRobotCredential_11" Password="[password]" Username="[username]" />
+        <ui:GetRobotCredential TimeoutMS="{x:Null}" AssetName="Erp_Solution_Login" CacheStrategy="None" DisplayName="Get Credential" FolderPath="BTG CASE DEV" sap:VirtualizedContainerService.HintSize="416,166" sap2010:WorkflowViewState.IdRef="GetRobotCredential_11" Password="[password]" Username="[username]" />
       </Sequence>
     </Sequence>
-    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="620,57" sap2010:WorkflowViewState.IdRef="CommentOut_2">
-      <ui:CommentOut.Body>
-        <Sequence DisplayName="Atividades Ignoradas" sap:VirtualizedContainerService.HintSize="484,108" sap2010:WorkflowViewState.IdRef="Sequence_57">
-          <sap:WorkflowViewStateService.ViewState>
-            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-            </scg:Dictionary>
-          </sap:WorkflowViewStateService.ViewState>
-          <Sequence DisplayName="FSIST" sap:VirtualizedContainerService.HintSize="450,48" sap2010:WorkflowViewState.IdRef="Sequence_26">
-            <sap:WorkflowViewStateService.ViewState>
-              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                <x:Boolean x:Key="IsPinned">True</x:Boolean>
-              </scg:Dictionary>
-            </sap:WorkflowViewStateService.ViewState>
-            <ui:LogMessage DisplayName="LOGIN FSIST" sap:VirtualizedContainerService.HintSize="388,173" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;Login FSist&quot;]" />
-            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="LoginFSist - Invoke Workflow File (Fluxos\LoginFSist.xaml)" sap:VirtualizedContainerService.HintSize="388,206" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Fluxos\LoginFSist.xaml">
-              <ui:InvokeWorkflowFile.Arguments>
-                <InArgument x:TypeArguments="x:String" x:Key="usernameFsist">[usernameFsist]</InArgument>
-                <InArgument x:TypeArguments="ss:SecureString" x:Key="passwordFsist">[passwordFsist]</InArgument>
-                <InArgument x:TypeArguments="x:String" x:Key="strURLFsist">[strURLFsist]</InArgument>
-              </ui:InvokeWorkflowFile.Arguments>
-              <sap:WorkflowViewStateService.ViewState>
-                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                </scg:Dictionary>
-              </sap:WorkflowViewStateService.ViewState>
-            </ui:InvokeWorkflowFile>
-            <ui:LogMessage DisplayName="CTE" sap:VirtualizedContainerService.HintSize="388,173" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[&quot;Acessando CTE e baixando XMLs&quot;]">
-              <sap:WorkflowViewStateService.ViewState>
-                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                </scg:Dictionary>
-              </sap:WorkflowViewStateService.ViewState>
-            </ui:LogMessage>
-            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="CTeFSist - Invoke Workflow File (Fluxos\CTeFSist.xaml)" sap:VirtualizedContainerService.HintSize="388,197" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="Fluxos\CTeFSist.xaml">
-              <ui:InvokeWorkflowFile.Arguments>
-                <scg:Dictionary x:TypeArguments="x:String, Argument" />
-              </ui:InvokeWorkflowFile.Arguments>
-              <sap:WorkflowViewStateService.ViewState>
-                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                </scg:Dictionary>
-              </sap:WorkflowViewStateService.ViewState>
-            </ui:InvokeWorkflowFile>
-          </Sequence>
-        </Sequence>
-      </ui:CommentOut.Body>
-      <sap:WorkflowViewStateService.ViewState>
-        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-          <x:Boolean x:Key="IsPinned">True</x:Boolean>
-        </scg:Dictionary>
-      </sap:WorkflowViewStateService.ViewState>
-    </ui:CommentOut>
-    <Sequence DisplayName="XML -&gt; SOLUTION" sap:VirtualizedContainerService.HintSize="620,3202" sap2010:WorkflowViewState.IdRef="Sequence_29">
+    <Sequence DisplayName="FSIST" sap:VirtualizedContainerService.HintSize="586,841" sap2010:WorkflowViewState.IdRef="Sequence_26">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:ForEachFileX DisplayName="For Each File In Folder" Folder="C:\VincularCTE" sap:VirtualizedContainerService.HintSize="586,3119" sap2010:WorkflowViewState.IdRef="ForEachFileX_1" IncludeSubDirectories="False" OrderBy="NameAscFirst" SkipFolderWithoutPermission="False">
+      <ui:LogMessage DisplayName="LOGIN FSIST" sap:VirtualizedContainerService.HintSize="416,173" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;Login FSist&quot;]" />
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="LoginFSist - Invoke Workflow File (Fluxos\LoginFSist.xaml)" sap:VirtualizedContainerService.HintSize="416,206" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Fluxos\LoginFSist.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="usernameFsist">[usernameFsist]</InArgument>
+          <InArgument x:TypeArguments="ss:SecureString" x:Key="passwordFsist">[passwordFsist]</InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="strURLFsist">[strURLFsist]</InArgument>
+        </ui:InvokeWorkflowFile.Arguments>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:InvokeWorkflowFile>
+      <ui:LogMessage DisplayName="CTE" sap:VirtualizedContainerService.HintSize="416,173" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[&quot;Acessando CTE e baixando XMLs&quot;]">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:LogMessage>
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="CTeFSist - Invoke Workflow File (Fluxos\CTeFSist.xaml)" sap:VirtualizedContainerService.HintSize="416,197" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="Fluxos\CTeFSist.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <scg:Dictionary x:TypeArguments="x:String, Argument" />
+        </ui:InvokeWorkflowFile.Arguments>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:InvokeWorkflowFile>
+    </Sequence>
+    <Sequence DisplayName="XML -&gt; SOLUTION" sap:VirtualizedContainerService.HintSize="586,2991" sap2010:WorkflowViewState.IdRef="Sequence_29">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:ForEachFileX DisplayName="For Each File In Folder" Folder="C:\VincularCTE" sap:VirtualizedContainerService.HintSize="552,2908" sap2010:WorkflowViewState.IdRef="ForEachFileX_1" IncludeSubDirectories="False" OrderBy="NameAscFirst" SkipFolderWithoutPermission="False">
         <ui:ForEachFileX.Body>
           <ActivityAction x:TypeArguments="si:FileInfo, x:Int32">
             <ActivityAction.Argument1>
@@ -290,21 +273,21 @@
             <ActivityAction.Argument2>
               <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
             </ActivityAction.Argument2>
-            <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="552,2838" sap2010:WorkflowViewState.IdRef="Sequence_30">
+            <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="518,2627" sap2010:WorkflowViewState.IdRef="Sequence_30">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <Sequence DisplayName="XML" sap:VirtualizedContainerService.HintSize="518,738" sap2010:WorkflowViewState.IdRef="Sequence_31">
+              <Sequence DisplayName="XML" sap:VirtualizedContainerService.HintSize="484,598" sap2010:WorkflowViewState.IdRef="Sequence_31">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <ui:LogMessage DisplayName="EXTRAINDO DADOS XML" sap:VirtualizedContainerService.HintSize="484,173" sap2010:WorkflowViewState.IdRef="LogMessage_11" Level="Info" Message="[&quot;Extraindo dados do XML - &quot; + CurrentFile.Name]" />
-                <ui:InvokeCode ContinueOnError="{x:Null}" Code="' Carregue o XML a partir da variável que contém o caminho do arquivo XML&#xA;Dim xml As XDocument = XDocument.Load(xmlFile)&#xA;&#xA;' Verifique se o XML usa namespaces&#xA;Dim ns As XNamespace = xml.Root.GetDefaultNamespace()&#xA;&#xA;' Inicialize a DataTable&#xA;Dim dtCTe As New DataTable&#xA;dtCTe.Columns.Add(&quot;Toma&quot;, GetType(String))&#xA;dtCTe.Columns.Add(&quot;nCT&quot;, GetType(String))&#xA;dtCTe.Columns.Add(&quot;Remetente&quot;, GetType(String))&#xA;dtCTe.Columns.Add(&quot;Recebedor&quot;, GetType(String))&#xA;dtCTe.Columns.Add(&quot;MunRecebedor&quot;, GetType(String))&#xA;&#xA;' Iterar sobre os elementos do XML&#xA;For Each item As XElement In xml.Descendants(ns + &quot;infCte&quot;)&#xA;    ' Inicializar variável para 'toma'&#xA;    Dim toma As String = String.Empty&#xA;&#xA;    ' Tentar capturar 'toma3', e se falhar, capturar 'toma4'&#xA;    Try&#xA;        toma = item.Element(ns + &quot;ide&quot;).Element(ns + &quot;toma3&quot;).Element(ns + &quot;toma&quot;).Value&#xA;    Catch ex As Exception&#xA;&#x9;&#x9;toma = item.Element(ns + &quot;ide&quot;).Element(ns + &quot;toma4&quot;).Element(ns + &quot;toma&quot;).Value&#xA;    End Try&#xA;&#xA;    ' Captura os outros dados normalmente&#xA;    Dim nCT As String = item.Element(ns + &quot;ide&quot;).Element(ns + &quot;nCT&quot;).Value&#xA;    Dim remetente As String = item.Element(ns + &quot;emit&quot;).Element(ns + &quot;xNome&quot;).Value ' Nome do remetente&#xA;    Dim recebedor As String = item.Element(ns + &quot;dest&quot;).Element(ns + &quot;xNome&quot;).Value ' Nome do recebedor&#xA;    Dim munRecebedor As String = item.Element(ns + &quot;dest&quot;).Element(ns + &quot;enderDest&quot;).Element(ns + &quot;xMun&quot;).Value ' Município do recebedor&#xA;&#xA;    ' Adicione os valores na DataTable&#xA;    dtCTe.Rows.Add(toma, nCT, remetente, recebedor, munRecebedor)&#xA;Next&#xA;&#xA;' Atribuir a DataTable 'dtCTe' ao argumento de saída 'out_dtCTe'&#xA;out_dtCTe = dtCTe" DisplayName="Invoke Code" sap:VirtualizedContainerService.HintSize="484,57" sap2010:WorkflowViewState.IdRef="InvokeCode_2">
+                <ui:LogMessage DisplayName="EXTRAINDO DADOS XML" sap:VirtualizedContainerService.HintSize="450,173" sap2010:WorkflowViewState.IdRef="LogMessage_11" Level="Info" Message="[&quot;Extraindo dados do XML - &quot; + CurrentFile.Name]" />
+                <ui:InvokeCode ContinueOnError="{x:Null}" Code="' Carregue o XML a partir da variável que contém o caminho do arquivo XML&#xA;Dim xml As XDocument = XDocument.Load(xmlFile)&#xA;&#xA;' Verifique se o XML usa namespaces&#xA;Dim ns As XNamespace = xml.Root.GetDefaultNamespace()&#xA;&#xA;' Inicialize a DataTable&#xA;Dim dtCTe As New DataTable&#xA;dtCTe.Columns.Add(&quot;Toma&quot;, GetType(String))&#xA;dtCTe.Columns.Add(&quot;nCT&quot;, GetType(String))&#xA;dtCTe.Columns.Add(&quot;Remetente&quot;, GetType(String))&#xA;dtCTe.Columns.Add(&quot;Recebedor&quot;, GetType(String))&#xA;dtCTe.Columns.Add(&quot;MunRecebedor&quot;, GetType(String))&#xA;&#xA;' Iterar sobre os elementos do XML&#xA;For Each item As XElement In xml.Descendants(ns + &quot;infCte&quot;)&#xA;    ' Inicializar variável para 'toma'&#xA;    Dim toma As String = String.Empty&#xA;&#xA;    ' Tentar capturar 'toma3', e se falhar, capturar 'toma4'&#xA;    Try&#xA;        toma = item.Element(ns + &quot;ide&quot;).Element(ns + &quot;toma3&quot;).Element(ns + &quot;toma&quot;).Value&#xA;    Catch ex As Exception&#xA;&#x9;&#x9;toma = item.Element(ns + &quot;ide&quot;).Element(ns + &quot;toma4&quot;).Element(ns + &quot;toma&quot;).Value&#xA;    End Try&#xA;&#xA;    ' Captura os outros dados normalmente&#xA;    Dim nCT As String = item.Element(ns + &quot;ide&quot;).Element(ns + &quot;nCT&quot;).Value&#xA;    Dim remetente As String = item.Element(ns + &quot;emit&quot;).Element(ns + &quot;xNome&quot;).Value ' Nome do remetente&#xA;    Dim recebedor As String = item.Element(ns + &quot;dest&quot;).Element(ns + &quot;xNome&quot;).Value ' Nome do recebedor&#xA;    Dim munRecebedor As String = item.Element(ns + &quot;dest&quot;).Element(ns + &quot;enderDest&quot;).Element(ns + &quot;xMun&quot;).Value ' Município do recebedor&#xA;&#xA;    ' Adicione os valores na DataTable&#xA;    dtCTe.Rows.Add(toma, nCT, remetente, recebedor, munRecebedor)&#xA;Next&#xA;&#xA;' Atribuir a DataTable 'dtCTe' ao argumento de saída 'out_dtCTe'&#xA;out_dtCTe = dtCTe" DisplayName="Invoke Code" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="InvokeCode_2">
                   <ui:InvokeCode.Arguments>
                     <InArgument x:TypeArguments="x:String" x:Key="xmlFile">[CurrentFile.FullName]</InArgument>
                     <OutArgument x:TypeArguments="sd:DataTable" x:Key="out_dtCTe">[dtCTe]</OutArgument>
@@ -316,7 +299,7 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </ui:InvokeCode>
-                <Sequence DisplayName="TOMADOR" sap:VirtualizedContainerService.HintSize="484,57" sap2010:WorkflowViewState.IdRef="Sequence_32">
+                <Sequence DisplayName="TOMADOR" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="Sequence_32">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -332,7 +315,7 @@
                     </Assign.Value>
                   </Assign>
                 </Sequence>
-                <Sequence DisplayName="NÚMERO CTE" sap:VirtualizedContainerService.HintSize="484,57" sap2010:WorkflowViewState.IdRef="Sequence_50">
+                <Sequence DisplayName="NÚMERO CTE" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="Sequence_50">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -348,11 +331,11 @@
                     </Assign.Value>
                   </Assign>
                 </Sequence>
-                <Sequence DisplayName="REMETENTE E RECEBEDOR - IF ELSE" sap:VirtualizedContainerService.HintSize="484,197" sap2010:WorkflowViewState.IdRef="Sequence_33">
+                <Sequence DisplayName="REMETENTE E RECEBEDOR - IF ELSE" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="Sequence_33">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                   <Sequence DisplayName="REMETENTE" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="Sequence_39">
@@ -478,7 +461,7 @@
                     </ui:IfElseIfV2>
                   </Sequence>
                 </Sequence>
-                <Sequence DisplayName="FILIAL - IF ELSE" sap:VirtualizedContainerService.HintSize="484,57" sap2010:WorkflowViewState.IdRef="Sequence_34">
+                <Sequence DisplayName="FILIAL - IF ELSE" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="Sequence_34">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -628,7 +611,7 @@
                     </ui:IfElseIfV2.Then>
                   </ui:IfElseIfV2>
                 </Sequence>
-                <ui:IfElseIfV2 Condition="[varTomador = &quot;0&quot; Or varTomador = &quot;4&quot;]" DisplayName="VERIFICA NÚMERO TOMADOR" sap:VirtualizedContainerService.HintSize="484,48" sap2010:WorkflowViewState.IdRef="IfElseIfV2_4">
+                <ui:IfElseIfV2 Condition="[varTomador = &quot;0&quot; Or varTomador = &quot;4&quot;]" DisplayName="VERIFICA NÚMERO TOMADOR" sap:VirtualizedContainerService.HintSize="450,48" sap2010:WorkflowViewState.IdRef="IfElseIfV2_4">
                   <ui:IfElseIfV2.Else>
                     <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,89" sap2010:WorkflowViewState.IdRef="Sequence_52">
                       <sap:WorkflowViewStateService.ViewState>
@@ -706,7 +689,7 @@
                   </ui:IfElseIfV2.Then>
                 </ui:IfElseIfV2>
               </Sequence>
-              <Sequence DisplayName="SOLUTION" sap:VirtualizedContainerService.HintSize="518,2040" sap2010:WorkflowViewState.IdRef="Sequence_27">
+              <Sequence DisplayName="SOLUTION" sap:VirtualizedContainerService.HintSize="484,1969" sap2010:WorkflowViewState.IdRef="Sequence_27">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -736,14 +719,16 @@
                 <ui:LogMessage DisplayName="SELECIONANDO FINANCEIRO" sap:VirtualizedContainerService.HintSize="416,173" sap2010:WorkflowViewState.IdRef="LogMessage_10" Level="Info" Message="[&quot;Selecionando Financeiro&quot;]" />
                 <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="FinanceiroSolution - Invoke Workflow File (Fluxos\FinanceiroSolution.xaml)" sap:VirtualizedContainerService.HintSize="416,206" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_6" UnSafe="False" WorkflowFileName="Fluxos\FinanceiroSolution.xaml">
                   <ui:InvokeWorkflowFile.Arguments>
-                    <InArgument x:TypeArguments="x:String" x:Key="in_Remetente">[varRemetenteCTE]</InArgument>
-                    <InArgument x:TypeArguments="x:String" x:Key="in_Recebedor">[varRecebedorCTE]</InArgument>
+                    <scg:Dictionary x:TypeArguments="x:String, Argument" />
                   </ui:InvokeWorkflowFile.Arguments>
                 </ui:InvokeWorkflowFile>
                 <ui:LogMessage DisplayName="SUBINDO XML SOLUTION" sap:VirtualizedContainerService.HintSize="416,173" sap2010:WorkflowViewState.IdRef="LogMessage_9" Level="Info" Message="[&quot;Subindo XMLs no Solution&quot;]" />
-                <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="XMLSolution - Invoke Workflow File (Fluxos\XMLSolution.xaml)" sap:VirtualizedContainerService.HintSize="416,268" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_7" UnSafe="False" WorkflowFileName="Fluxos\XMLSolution.xaml">
+                <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="XMLSolution - Invoke Workflow File (Fluxos\XMLSolution.xaml)" sap:VirtualizedContainerService.HintSize="416,197" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_7" UnSafe="False" WorkflowFileName="Fluxos\XMLSolution.xaml">
                   <ui:InvokeWorkflowFile.Arguments>
                     <InArgument x:TypeArguments="x:String" x:Key="in_Arquivo">[CurrentFile.FullName]</InArgument>
+                    <InArgument x:TypeArguments="x:String" x:Key="in_Remetente">[varRemetenteCTE]</InArgument>
+                    <InArgument x:TypeArguments="x:String" x:Key="in_Recebedor">[varRecebedorCTE]</InArgument>
+                    <InArgument x:TypeArguments="x:String" x:Key="in_CTE">[varNumeroCTE]</InArgument>
                   </ui:InvokeWorkflowFile.Arguments>
                 </ui:InvokeWorkflowFile>
               </Sequence>

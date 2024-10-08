@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="QvJ5_rgPP0e-3-tpNbz_yA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="http://10.11.116.7:8080/ERPSolutionWeb_Teste/servlet/erpsolution.compras.estctcparcela?gu_VRPBelpuvWEWWmC_ZlfDXpTAh2Un9IF_v3LJaezQ28ru0MZS31NA_ZItTXc5tfxpUUDqDnufuo1fm8sgxMQ,gxPopupLevel%3D0%3B" CVScreenId="4a45cf01-4f90-401c-9d82-4b09e8506edc" CvElementArea="726, 496, 425, 41" CvType="InputBox" DesignTimeRectangle="728, 498, 422, 37" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='gxp0_ifrm' tag='IFRAME' /&gt;&lt;webctrl name='E15DATAV' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl id='gxp0_ifrm' tag='IFRAME' /&gt;&lt;webctrl name='E15DATAV' tag='INPUT' type='text' class='AttDate form-control' aaname='Data de vencimento' /&gt;" Guid="b6fda141-58f3-40c2-9964-3c6bbc7e38fc" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Listas de Parcelas de CTC - 1119' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target CVScreenId="4a45cf01-4f90-401c-9d82-4b09e8506edc" CvTextArea="727, 481, 135, 15" CvTextArgument="Data de vencimento" CvType="Text" DesignTimeRectangle="728, 479, 463, 19" ElementType="Text" FullSelectorArgument="&lt;webctrl id='gxp0_ifrm' tag='IFRAME' /&gt;&lt;webctrl aaname='Data de vencimento' parentid='TABLECONTENT' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl id='gxp0_ifrm' tag='IFRAME' /&gt;&lt;webctrl aaname='Data de vencimento' parentid='TABLECONTENT' tag='LABEL' type='' class='gx-label AttDateLabel control-label' check:innerText='Data de vencimento' /&gt;" Guid="b1450120-3b98-4fd3-9b84-769ad6dc7cc4" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="98d3d51caec85dc32d039bdeb887d1c6.png" xmlns="">0WG5j_D1fQEmDeczhHgtS8w</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
