@@ -117,9 +117,21 @@
       <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
       <AssemblyReference>System.Linq.Expressions</AssemblyReference>
       <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
   <Sequence DisplayName="XMLSolution" sap:VirtualizedContainerService.HintSize="1836,6009" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="ui:UiElement" Name="elementoDeSaída_22">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:String x:Key="SourceIdRef">NClick_30</x:String>
+            <x:String x:Key="SourcePropertyName">OutUiElement</x:String>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </Variable>
+    </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -333,7 +345,7 @@
                         <uix:TargetAnchorable BrowserURL="http://10.11.116.7:8080/ERPSolutionWeb_Teste/servlet/erpsolution.compras.estctcparcela?gu_VRPBelpuvWEWWmC_ZlfDXpTAh2Un9IF_v3LJaezQ28ru0MZS31NA_ZItTXc5tfxpUUDqDnufuo1fm8sgxMQ,gxPopupLevel%3D0%3B" CVScreenId="7cc572de-ad4d-431e-bd49-e60793c92c78" CvElementArea="220, 568, 141, 49" CvTextArea="262, 585, 53, 13" CvTextArgument="SALVAR" CvType="Button" DesignTimeRectangle="222, 570, 138, 45" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;webctrl id='gxp0_ifrm' tag='IFRAME' /&gt;&lt;webctrl id='BTNTRN_ENTER' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='gxp0_ifrm' tag='IFRAME' /&gt;&lt;webctrl id='BTNTRN_ENTER' tag='INPUT' type='button' class='BtnDefault btn btn-default' aaname='SALVAR' check:text='SALVAR' /&gt;" Guid="f119e436-1ade-4eb0-9ea9-4105d3d430f6" InformativeScreenshot="56015fdbf63b3deb53192ff5f3231876.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Listas de Parcelas de CTC - 1119' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive" />
                       </uix:NClick.Target>
                     </uix:NClick>
-                    <uix:NClick ActivateBefore="True" ClickType="Single" DelayBefore="2" DisplayName="Click 'Confirmar'" sap:VirtualizedContainerService.HintSize="450,189" sap2010:WorkflowViewState.IdRef="NClick_30" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6616bf61-862b-43f6-9b84-6849392bac70" Version="V3">
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DelayBefore="2" DisplayName="Click 'Confirmar'" sap:VirtualizedContainerService.HintSize="450,189" sap2010:WorkflowViewState.IdRef="NClick_30" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" OutUiElement="[elementoDeSaída_22]" ScopeIdentifier="6616bf61-862b-43f6-9b84-6849392bac70" Version="V3">
                       <uix:NClick.Target>
                         <uix:TargetAnchorable BrowserURL="http://10.11.116.7:8080/ERPSolutionWeb_Teste/servlet/erpsolution.compras.estctcparcelaconsultar?gu_VRPBelpuvWEWWmC_ZlfDXpTAh2Un9IF_v3LJaezQic3q-YymkJLnzuG6RtBeJBlg94v3zEcDsvOWQULo4FA" CVScreenId="7a0c65ca-f4ee-4d0c-be8f-4c19e36d5495" CvElementArea="307, 594, 142, 50" CvTextArea="336, 611, 82, 13" CvTextArgument="CONFIRMAR" CvType="Button" DesignTimeRectangle="309, 596, 138, 45" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;webctrl id='BTNCONFIRMAR' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='BTNCONFIRMAR' tag='INPUT' type='button' class='BtnDefault btn btn-default' aaname='Confirmar' check:text='Confirmar' /&gt;" Guid="7cdcc33b-2f5f-4031-a90a-1f73a3703610" InformativeScreenshot="d1c33782633f410a154351b4bb12b684.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Listas de Parcelas de CTC - 1119' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive" />
                       </uix:NClick.Target>
